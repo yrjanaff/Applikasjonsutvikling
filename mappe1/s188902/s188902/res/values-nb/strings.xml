@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hangman</string>
+    <string name="action_cancel">Avbryt</string>
+    <string name="action_close">Avslutt</string>
+    <string name="action_alt">Alternativer</string>
+    <string name="stat_string">Statistikk</string>
+    <string name="lang_string">Språk</string>
+    <string name="start_string">Start spill</string>
+    <string name="rules_string">Regler</string>
+    <string name="lose_string">Tapt</string>
+    <string name="win_string">Vunnet</string>
+    <string name="winPercent_string">Vinnerprosent</string>
+    <string name="flag_description">Bytt språk ved å trykke på flagget</string>
+    <string name="choseLangText">Bytt språk:</string>
+    <string name="warning">Advasel</string>
+    <string name="noWords">Alle ordene er brukt! Restarter</string>
+    <string name="congrats">Gratulerer</string>
+    <string name="u_won">Du VANT! Ordet var:</string>
+    <string name="play_again">Vil du spille igjen?</string>
+    <string name="u_lost">Du tapte! Ordet var:</string>
+    <string name="langSet">Språket ble satt til:</string>
+    <string name="back">Vil du gå tilbake?</string>
+    <string name="lose_progress">Spillet vil gå tapt</string>
+    <string name="showhang">Viser hangman</string>
+    <string name="action_back">Tilbake</string>
+    <string name="new_game">Nytt spill</string>
+    <string name="progress_lost">Spillet du nå spiller vil gå tapt. Vil du fortsette?</string>
+    <string name="ok_string">OK</string>
+    <string name="qLetter">Q</string>
+    <string name="wLetter">W</string>
+    <string name="eLetter">E</string>
+    <string name="rLetter">R</string>
+    <string name="tLetter">T</string>
+    <string name="yLetter">Y</string>
+    <string name="uLetter">U</string>
+    <string name="iLetter">I</string>
+    <string name="oLetter">O</string>
+    <string name="pLetter">P</string>
+    <string name="aaLetter">Å</string>
+    <string name="aLetter">A</string>
+    <string name="sLetter">S</string>
+    <string name="dLetter">D</string>
+    <string name="fLetter">F</string>
+    <string name="gLetter">G</string>
+    <string name="hLetter">H</string>
+    <string name="jLetter">J</string>
+    <string name="kLetter">K</string>
+    <string name="lLetter">L</string>
+    <string name="oeLetter">Ø</string>
+    <string name="aeLetter">Æ</string>
+    <string name="zLetter">Z</string>
+    <string name="xLetter">X</string>
+    <string name="cLetter">C</string>
+    <string name="vLetter">V</string>
+    <string name="bLetter">B</string>
+    <string name="nLetter">N</string>
+    <string name="mLetter">M</string>
+	<string name="rules">Spillet går ut på at man skal redde en strekmann fra å bli hengt, ved å gjette på et ord.
+	    Antall bokstaver i ordet blir vist ved understreker, og man har seks forsøk på å gjette ordet. Greier man
+	    ikke å gjette ordet vil strekmannen bli hengt, og man taper spillet.</string>
+</resources>

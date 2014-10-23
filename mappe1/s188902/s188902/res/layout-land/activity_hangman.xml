@@ -1,0 +1,380 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blackboard"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="no.yaff.hangmanoblig1.MainActivity" >
+
+    <GridLayout
+        android:id="@+id/gridLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/GridLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="3dp"
+        android:columnCount="12" >
+
+        <Button
+            android:id="@+id/buttonE"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_column="3"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_state"
+            android:text="@string/eLetter" />
+
+        <Button
+            android:id="@+id/buttonR"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_state"
+            android:text="@string/rLetter" />
+
+        <Button
+            android:id="@+id/buttonT"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_state"
+            android:text="@string/tLetter" />
+
+        <Button
+            android:id="@+id/buttonY"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_state"
+            android:text="@string/yLetter" />
+
+        <Button
+            android:id="@+id/buttonU"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_state"
+            android:text="@string/uLetter" />
+
+        <Button
+            android:id="@+id/buttonI"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_state"
+            android:text="@string/iLetter" />
+
+        <Button
+            android:id="@+id/buttonO"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_state"
+            android:text="@string/oLetter" />
+
+        <Button
+            android:id="@+id/buttonP"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_state"
+            android:text="@string/pLetter" />
+
+        <Button
+            android:id="@+id/buttonAa"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_state"
+            android:text="@string/aaLetter" />
+
+        <Button
+            android:id="@+id/buttonW"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_column="1"
+            android:layout_gravity="left|center_vertical"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginLeft="3dp"
+            android:layout_row="0"
+            android:background="@drawable/button_state"
+            android:text="@string/wLetter"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/buttonQ"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginLeft="3dp"
+            android:layout_row="0"
+            android:background="@drawable/button_state"
+            android:text="@string/qLetter" />
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/GridLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/GridLayout3"
+        android:layout_alignLeft="@+id/gridLayout1"
+        android:layout_marginBottom="3dp"
+        android:columnCount="12" >
+
+        <Button
+            android:id="@+id/buttonA"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_state"
+            android:text="@string/aLetter" />
+
+        <Button
+            android:id="@+id/buttonS"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_state"
+            android:text="@string/sLetter" />
+
+        <Button
+            android:id="@+id/buttonD"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_column="3"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_state"
+            android:text="@string/dLetter" />
+
+        <Button
+            android:id="@+id/buttonF"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_state"
+            android:text="@string/fLetter" />
+
+        <Button
+            android:id="@+id/buttonG"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_state"
+            android:text="@string/gLetter" />
+
+        <Button
+            android:id="@+id/buttonH"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_state"
+            android:text="@string/hLetter" />
+
+        <Button
+            android:id="@+id/buttonJ"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_state"
+            android:text="@string/jLetter" />
+
+        <Button
+            android:id="@+id/buttonK"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_state"
+            android:text="@string/kLetter" />
+
+        <Button
+            android:id="@+id/buttonL"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_state"
+            android:text="@string/lLetter" />
+
+        <Button
+            android:id="@+id/buttonOe"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_state"
+            android:text="@string/oeLetter" />
+
+        <Button
+            android:id="@+id/buttonAe"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_state"
+            android:text="@string/aeLetter" />
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/GridLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:columnCount="8" >
+
+        <Button
+            android:id="@+id/buttonZ"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_state"
+            android:text="@string/zLetter" />
+
+        <Button
+            android:id="@+id/buttonX"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_state"
+            android:text="@string/xLetter"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/buttonC"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_column="3"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_state"
+            android:text="@string/cLetter" />
+
+        <Button
+            android:id="@+id/buttonV"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_state"
+            android:text="@string/vLetter" />
+
+        <Button
+            android:id="@+id/buttonB"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_state"
+            android:text="@string/bLetter" />
+
+        <Button
+            android:id="@+id/buttonN"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_state"
+            android:text="@string/nLetter" />
+
+        <Button
+            android:id="@+id/buttonM"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/button_state"
+            android:text="@string/mLetter" />
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/hang_View"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/gridLayout1"
+        android:layout_alignLeft="@+id/gridLayout1"
+        android:contentDescription="@+string/showhang"
+        android:src="@drawable/hang_base" />
+
+    <LinearLayout
+        android:id="@+id/TextBoxLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/hang_View"
+        android:layout_marginBottom="21dp"
+        android:layout_toRightOf="@+id/hang_View"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</RelativeLayout>

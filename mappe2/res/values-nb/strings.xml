@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Kontakter</string>
+    <string name="action_settings">Innstillinger</string>
+    <string name="action_add">Legg til kontakt</string>
+    <string name="contacts">Kontakter</string>
+    <string name="settings">Innstillinger</string>
+    <string name="add_contact">Legg til kontakt</string>
+    <string name="firstname">Fornavn</string>
+    <string name="lastname">Etternavn</string>
+    <string name="phone">Tlf</string>
+    <string name="birthdate">Fødselsdato</string>
+    <string name="add">Legg til</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Avbryt</string>
+    <string name="phone_error">Tlf nummer må være minst 8 siffer</string>
+    <string name="name_error">Minst et av navnene må være fylt ut</string>
+    <string name="edit_contact">Rediger kontakt</string>
+    <string name="edit">Rediger</string>
+    <string name="delete">Slett</string>
+    <string name="delete_warning">Er du sikker på at du vil slette?</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nei</string>
+    <string name="birth_sms">Bursdags SMS</string>
+    <string name="msg_txt">Meldingstekst</string>
+    <string name="change_lang">Endre språk</string>
+    <string name="save">Lagre</string>
+    <string name="sms_warning">Følgende bursdagsmelding vil nå bli lagret: </string>
+    <string name="sms_warning2">Den vil bli sendt hver dag klokken: </string>
+    <string name="sms_text_warning">Bursdagsmelding er påkrevd</string>
+    <string name="noti_title">Bursdagsmeldinger</string>
+    <string name="noti_text">Bursdagsmeldinger har blitt sendt!</string>
+    <string name="sms_info">Ingen meldinger har blitt sendt i dag</string>
+    <string name="info_text_sms">Bursdagsmeldinger ble sendt til følgende personer:</string>
+	<string name="new_lang">Språket ble satt til Norsk</string>
+	<string name="close">Avslutt</string>
+	
+</resources>

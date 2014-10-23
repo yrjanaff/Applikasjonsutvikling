@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="no.yaff.s188902_mappe2"
+    android:versionCode="1"
+    android:versionName="1.0" 
+    android:screenOrientation="landscape">
+
+    <uses-permission android:name="no.yaff.s188902_mappe2.permission"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> 
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <permission android:name="no.yaff.s188902_mappe2.permission"/>
+    
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+        
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".ContactList"
+            android:label="@string/app_name" 
+            android:configChanges="locale">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".NewContact"
+            android:label="@string/add"
+            android:parentActivityName=".ContactList">
+        </activity>
+        <activity
+            android:name=".EditContact"
+            android:label="@string/edit"
+            android:parentActivityName=".ContactList">
+            
+        </activity>
+        <activity 
+            android:name=".Settings"
+            android:label="@string/settings"
+            android:parentActivityName=".ContactList">
+        </activity>
+        <activity
+            android:name=".Result"
+            android:label="@string/app_name"
+            android:parentActivityName=".ContactList">
+        </activity>
+        <service 
+            android:name=".SmsService"
+            android:process=":my_process">
+        </service>
+        <service
+            android:name=".PeriodicService"
+            android:process=":my_process">
+        </service>
+        <receiver
+            android:name=".SmsServiceReceiver"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

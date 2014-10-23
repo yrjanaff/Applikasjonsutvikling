@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="@+string/edit_contact"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/textEditView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@+string/birthdate"
+        android:labelFor="@+id/datePicker1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" />
+
+    <DatePicker
+        android:id="@+id/dateEditPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textEditView2"
+        android:layout_centerHorizontal="true"
+        android:calendarViewShown="false" />
+
+    <EditText
+        android:id="@+id/lastnameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/phoneEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="@+string/lastname" 
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BBBBBB"/>
+
+    <EditText
+        android:id="@+id/firstnameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lastnameEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:hint="@+string/firstname" 
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BBBBBB"/>
+
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textEditView2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:hint="@+string/phone"
+        android:inputType="number" 
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BBBBBB"/>
+
+    <ImageButton
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/title"
+        android:layout_alignTop="@+id/editButton"
+        android:contentDescription="@string/delete"
+        android:src="@drawable/ic_menu_delete"
+        android:text="@+string/delete" />
+
+    <ImageButton
+        android:id="@+id/editButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/edit"
+        android:src="@drawable/ic_menu_edit"
+        android:text="@+string/edit" />
+
+</RelativeLayout>

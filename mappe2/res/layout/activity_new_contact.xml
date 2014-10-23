@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="@+string/add_contact"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/firstnameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="@+string/firstname" 
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BBBBBB"/>
+
+    <EditText
+        android:id="@+id/lastnameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/firstnameText"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@+string/lastname" 
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BBBBBB"/>
+
+    <EditText
+        android:id="@+id/phoneText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lastnameText"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="@+string/phone"
+        android:inputType="number" 
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BBBBBB"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@+string/birthdate"
+        android:labelFor="@+id/datePicker1"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="#FFFFFF"/>
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:calendarViewShown="false" />
+
+    <ImageButton
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:contentDescription="@string/add"
+        android:src="@drawable/ic_input_add"
+        android:text="@+string/add" />
+
+</RelativeLayout>

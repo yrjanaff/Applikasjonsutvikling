@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hangman</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_close">Close</string>
+    <string name="action_alt">Options</string>
+    <string name="stat_string">Statistics</string>
+    <string name="lang_string">Language</string>
+    <string name="start_string">Play</string>
+    <string name="rules_string">Rules</string>
+    <string name="lose_string">Lost</string>
+    <string name="win_string">Won</string>
+    <string name="winPercent_string">Win percentage</string>
+    <string name="flag_description">Change language by tapping the flag</string>
+    <string name="choseLangText">Change language:</string>
+    <string name="warning">Warning</string>
+    <string name="noWords">All words have been used! Restarting</string>
+    <string name="congrats">Congratulations</string>
+    <string name="u_won">You WON! The word was:</string>
+    <string name="play_again">Do you want to play again?</string>
+    <string name="u_lost">You lost! The word was:</string>
+    <string name="langSet">The language was set to:</string>
+    <string name="back">Do you want to go back?</string>
+    <string name="lose_progress">Your progress will be lost</string>
+    <string name="action_back">Back</string>
+    <string name="showhang">Shows the hangman</string>
+    <string name="new_game">New game</string>
+    <string name="progress_lost">The game you are currently playing will be lost. Continue?</string>
+    <string name="ok_string">OK</string>
+	<string name="qLetter">Q</string>
+    <string name="wLetter">W</string>
+    <string name="eLetter">E</string>
+    <string name="rLetter">R</string>
+    <string name="tLetter">T</string>
+    <string name="yLetter">Y</string>
+    <string name="uLetter">U</string>
+    <string name="iLetter">I</string>
+    <string name="oLetter">O</string>
+    <string name="pLetter">P</string>
+    <string name="aaLetter">Å</string>
+    <string name="aLetter">A</string>
+    <string name="sLetter">S</string>
+    <string name="dLetter">D</string>
+    <string name="fLetter">F</string>
+    <string name="gLetter">G</string>
+    <string name="hLetter">H</string>
+    <string name="jLetter">J</string>
+    <string name="kLetter">K</string>
+    <string name="lLetter">L</string>
+    <string name="oeLetter">Ø</string>
+    <string name="aeLetter">Æ</string>
+    <string name="zLetter">Z</string>
+    <string name="xLetter">X</string>
+    <string name="cLetter">C</string>
+    <string name="vLetter">V</string>
+    <string name="bLetter">B</string>
+    <string name="nLetter">N</string>
+    <string name="mLetter">M</string>
+    <string name="rules">The objective of the game is to save a stickman from being hanged, by guessing a word. 
+						The number of letters in the word are shown by underlines, and you have six attempts to guess the whole word. 
+						If you can’t guess the word, the stickman will be hanged and you lose the game.</string>
+</resources>
