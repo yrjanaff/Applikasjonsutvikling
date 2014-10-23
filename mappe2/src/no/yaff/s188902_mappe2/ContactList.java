@@ -1,28 +1,22 @@
 package no.yaff.s188902_mappe2;
 
-//import java.util.Calendar;
 import java.util.List;
 import java.util.Locale;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemLongClickListener;
-//import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-//import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
 
 public class ContactList extends Activity{
@@ -35,7 +29,6 @@ public class ContactList extends Activity{
 	
 	protected void onCreate(Bundle savedInstanceState){
 		 super.onCreate(savedInstanceState);
-		 setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 		 setLanguage();
 		 getActionBar().setTitle(getString(R.string.app_name));
 	     setContentView(R.layout.activity_contact_list);
@@ -56,7 +49,6 @@ public class ContactList extends Activity{
 		listView.setOnItemClickListener(new OnItemClickListener(){
 		@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1,int arg2, long arg3) {
-				//Toast.makeText(context, arg2 + " klikket", Toast.LENGTH_SHORT).show();
 				Contact contact = adapter.getItem(arg2);
 				Intent intent = new Intent(context, EditContact.class);
 				intent.putExtra("Contact", contact.getId());
@@ -100,7 +92,6 @@ public class ContactList extends Activity{
 	private void setLanguage(){
 		SharedPreferences languagepref = getSharedPreferences(Settings.LANGKEY, Context.MODE_MULTI_PROCESS);
 		String language = languagepref.getString(Settings.LOADLANG, Settings.ENG);
-		Log.d("Language", "Språk fra sp: " + language);
 		Locale locale = new Locale(language);
 		Locale.setDefault(locale);
 		Configuration config = new Configuration();

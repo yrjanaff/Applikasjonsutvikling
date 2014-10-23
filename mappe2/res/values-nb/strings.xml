@@ -35,5 +35,6 @@
     <string name="info_text_sms">Bursdagsmeldinger ble sendt til følgende personer:</string>
 	<string name="new_lang">Språket ble satt til Norsk</string>
 	<string name="close">Avslutt</string>
+	<string name="not_found">Kunne ikke finne kontakten! Avslutter</string>
 	
 </resources>

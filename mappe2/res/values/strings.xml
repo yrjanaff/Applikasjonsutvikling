@@ -35,4 +35,5 @@
     <string name="info_text_sms">Birthday messages was sent to the following people:</string>
 	<string name="new_lang">Language was set to English</string>
 	<string name="close">Close</string>
+	<string name="not_found">Could not find this contact. Aborting</string>
 </resources>

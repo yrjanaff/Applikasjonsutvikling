@@ -11,10 +11,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
-import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -52,7 +50,6 @@ public class Settings extends Activity {
 	
 	protected void onCreate(Bundle savedInstanceState){
 		 super.onCreate(savedInstanceState);
-		 setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 		 getActionBar().setTitle(getString(R.string.action_settings));
 	     setContentView(R.layout.activity_settings);
 	     
@@ -163,8 +160,6 @@ public class Settings extends Activity {
 	
 	private void loadPrefs(){
 		if(sp_sms.getBoolean(SMSSERVICE, false)){
-			Log.d("loadPrefs", "true! SMSSERVICE var true!");
-	    	 //scrollView.setVisibility(ScrollView.VISIBLE);
 			enable(true);
 	    	 smsSwitch.setChecked(true);
 	    	 String msgTxt = sp_sms.getString(SMSTXT, null);
@@ -179,8 +174,6 @@ public class Settings extends Activity {
 	    	 }
 	     }
 	     else{
-	    	 Log.d("loadPrefs", "false! SMSSERVICE var false!");
-	    	 //scrollView.setVisibility(ScrollView.GONE);
 	    	 enable(false);
 	    	 smsSwitch.setChecked(false);
 	     }
@@ -193,14 +186,11 @@ public class Settings extends Activity {
 	}
 	
 	private void savePrefs(String txt, int hour, int minute, boolean smsPrefsOn){
-		System.out.println("txt: " + txt + " hour: " + hour + " min: " + minute);
 		edit_sms.putString(SMSTXT, txt);
 		edit_sms.putInt(SMSHOUR, hour);
 		edit_sms.putInt(SMSMINUTE, minute);
 		edit_sms.putBoolean(SMSSERVICE, smsPrefsOn);
 		edit_sms.commit(); //VIKTIG!!!
-		
-		System.out.println("savePrefs! hour: " + sp_sms.getInt(SMSHOUR, -1) + " min: " + sp_sms.getInt(SMSMINUTE, -1));
 	}
 	
 	 public boolean onOptionsItemSelected(MenuItem item) {

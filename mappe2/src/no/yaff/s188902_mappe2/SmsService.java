@@ -13,8 +13,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.IBinder;
 import android.telephony.SmsManager;
-import android.util.Log;
-import android.widget.Toast;
 
 public class SmsService extends Service {
 	
@@ -27,10 +25,6 @@ public class SmsService extends Service {
 	SmsManager sms;
 
 	public int onStartCommand(Intent intent, int flags, int startId){
-		Toast.makeText(this, "Dette er SMSService!", Toast.LENGTH_SHORT).show();
-		
-		System.out.println("Hei! Jeg er inne i SmsService sin onStartCommand!");
-		
 		today = Calendar.getInstance();
 		sms = SmsManager.getDefault();
 		db = new DBHandler(this);
@@ -75,7 +69,6 @@ public class SmsService extends Service {
 				sms.sendTextMessage(con.getTel()+"", null, msg, pi, null);
 				
 				sentContacts.add(con.getId());
-				Log.d("SmsService", "SMS ble sendt til: " + con.getFirstName() + " " + con.getLastName() + " Meldingen var: " + msg);
 			}
 		}
 	}

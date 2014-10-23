@@ -99,6 +99,7 @@ public final class R {
         public static final int name_error=0x7f05000e;
         public static final int new_lang=0x7f050020;
         public static final int no=0x7f050014;
+        public static final int not_found=0x7f050022;
         public static final int noti_text=0x7f05001d;
         public static final int noti_title=0x7f05001c;
         public static final int ok=0x7f05000b;

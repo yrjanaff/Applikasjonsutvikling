@@ -7,7 +7,6 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -33,7 +32,6 @@ public class EditContact extends Activity {
 
 	 protected void onCreate(Bundle savedInstanceState) {
 		 super.onCreate(savedInstanceState);
-		 setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 		 getActionBar().setTitle(getString(R.string.edit));
 	     setContentView(R.layout.activity_edit_contact);
 	     
@@ -47,9 +45,7 @@ public class EditContact extends Activity {
 	     
 	     else
 	     {
-	    	 //TODO
-	    	 //-legge tekst i stings hvis denne meldingen er nødvendig
-	    	 Toast.makeText(context, "Kunne ikke finne kontakten! Avslutter", Toast.LENGTH_SHORT).show();
+	    	 Toast.makeText(context, getString(R.string.not_found), Toast.LENGTH_SHORT).show();
 	    	 finish();
 	     }
 	     

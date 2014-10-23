@@ -4,9 +4,7 @@ import java.util.Calendar;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -29,7 +27,6 @@ public class NewContact extends Activity {
 
 	 protected void onCreate(Bundle savedInstanceState) {
 		 super.onCreate(savedInstanceState);
-		 setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 		 getActionBar().setTitle(getString(R.string.add));
 	     setContentView(R.layout.activity_new_contact);
 	     
@@ -46,10 +43,6 @@ public class NewContact extends Activity {
         		birthdate.set(Calendar.DAY_OF_MONTH, birthPicker.getDayOfMonth());
         		birthdate.set(Calendar.MONTH, birthPicker.getMonth());
         		birthdate.set(Calendar.YEAR, birthPicker.getYear());
-        		Log.d("NewContact", "Date: " + birthPicker.getDayOfMonth() + "." + birthPicker.getMonth() + "." + 
-        				birthPicker.getYear());
-        		Log.d("NewContact", "Name: " + firstname + " "+ lastname + " date: " + birthdate.get(Calendar.DAY_OF_MONTH) + 
-        				"." + birthdate.get(Calendar.MONTH) + "." + birthdate.get(Calendar.YEAR));
         		
         		//TODO:
         		// - sjekke dato
